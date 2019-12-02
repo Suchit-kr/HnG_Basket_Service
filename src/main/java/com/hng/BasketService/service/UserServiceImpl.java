@@ -12,6 +12,7 @@ import java.util.Optional;
 
 /**
  * @author Suchit
+ * Service Class for User related operations
  */
 @Service
 public class UserServiceImpl implements UserService {
@@ -19,6 +20,13 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
+
+    /**
+     *
+     * @param userId
+     * @return
+     * @throws UserException
+     */
     @Override
     public UserLogin findUserById(Long userId) throws UserException {
         Optional<UserLogin> userLoginOptional = userDao.findById(userId);

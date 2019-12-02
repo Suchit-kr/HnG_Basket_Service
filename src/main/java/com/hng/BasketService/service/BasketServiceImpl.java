@@ -57,6 +57,15 @@ public class BasketServiceImpl implements BasketService {
         this.itemDao = itemDao;
     }
 
+    /**
+     *
+     * @param productId
+     * @param userId
+     * @param quantity
+     * @return
+     * @throws ProductException
+     * @throws SQLException
+     */
     @Transactional
     public CustomResponseEntity addProductToBasket(String productId, Long userId, Long quantity) throws ProductException, SQLException {
         HngBasketItemPK hngBasketItemPK = HngBasketItemPK.builder().basketId(userId).productId(productId).build();
@@ -86,6 +95,16 @@ public class BasketServiceImpl implements BasketService {
 
     }
 
+    /**
+     *
+     * @param productId
+     * @param userId
+     * @param quantity
+     * @return
+     * @throws ProductException
+     * @throws SQLException
+     * @throws BasketItemException
+     */
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public CustomResponseEntity deleteProductFromBasket(String productId, Long userId, Long quantity) throws ProductException, SQLException, BasketItemException {
@@ -114,7 +133,12 @@ public class BasketServiceImpl implements BasketService {
 
     }
 
-
+    /**
+     *
+     * @param userId
+     * @return
+     * @throws SQLException
+     */
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public CustomResponseEntity getBasket(long userId) throws SQLException {

@@ -87,6 +87,7 @@ public class BasketController {
     @GetMapping("/get/{id}")
     @ApiOperation(value = "Retrieve Basket",response = CustomResponseEntity.class)
     public ResponseEntity<Object> getBasket(@RequestParam @ApiParam(value = "ID of User") Long userId) throws UserException, SQLException {
+        userService.findUserById(userId);
         CustomResponseEntity customResponseEntity = basketService.getBasket(userId);
         return new ResponseEntity<>(customResponseEntity, HttpStatus.OK);
     }
