@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.sql.SQLException;
 
+/**
+ * @author Suchit
+ */
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 

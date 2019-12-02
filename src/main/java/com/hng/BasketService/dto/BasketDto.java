@@ -5,6 +5,10 @@ import lombok.Getter;
 
 import java.util.List;
 
+/**
+ * @author Suchit
+ */
+
 @Builder
 @Getter
 public class BasketDto {

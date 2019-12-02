@@ -12,6 +12,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
+/**
+ * @author Suchit
+ */
+
 @Entity
 @Getter
 @Setter

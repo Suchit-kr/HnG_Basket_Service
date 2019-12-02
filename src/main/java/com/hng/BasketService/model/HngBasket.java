@@ -9,6 +9,10 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * @author Suchit
+ */
+
 @Entity
 @Getter
 @Setter

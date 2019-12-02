@@ -2,6 +2,10 @@ package com.hng.BasketService.exception;
 
 import com.hng.BasketService.utility.ErrorCode;
 
+/**
+ * @author Suchit
+ */
+
 public class BasketException extends Exception {
     private ErrorCode errorCode;
 

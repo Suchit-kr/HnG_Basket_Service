@@ -6,6 +6,10 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import java.io.Serializable;
 
+/**
+ * @author Suchit
+ */
+
 @Entity
 @Getter
 @Setter

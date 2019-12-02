@@ -6,6 +6,10 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author Suchit
+ */
+
 @Component
 public class ResponseBuilder {
 
